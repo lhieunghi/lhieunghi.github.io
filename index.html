@@ -1,10 +1,160 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Nghi Le</title>
+    <!-- standard meta tags with name, description, and viewport-->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Nghi Le Design Home</title>
+    <meta name="author" content="Nghi Le"/>
+    <meta name="description" content= "A student graphic design portfolio with case studies"/>
+    <meta name="keywords" content= "student, graphic design, portfolio, case studies, example"/>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!-- fonts from google -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,600;1,300&family=Molle&family=Sonsie+One&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Titillium+Web:ital,wght@0,300;0,600;1,300;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      @font-face {
+        font-family: "monea-elegant";
+        src: url("https://cdn.glitch.global/a0ddd621-92ef-428e-89cb-b4cc488ab179/Monea%20Alegante.otf?v=1687139663720");
+      }
+    </style>
+
+    <script src="script.js"></script>
   </head>
+
   <body>
-    <h1>Nghi Le</h1>
+    <!-- i created a top navigation bar using unordered lists -->
+
+    <header>
+      <div id="brand">
+        <img alt="nghi le design student personal logo"
+          src="https://cdn.glitch.global/a0ddd621-92ef-428e-89cb-b4cc488ab179/Asset%206%403x.png?v=1687142398098"
+        />
+      </div>
+      <nav>
+        <ul class="desktop-nav">
+          <li class="active"><a href="index.html">Work</a></li>
+          <li class="active"><a href="branding.html">Branding</a></li>
+          <li class="active"><a href="pamphlet.html">Pamphlet</a></li>
+          <li class="active"><a href="app.html">App</a></li>
+          <li class="active"><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- below I'm using some javascript code to toggle the mobile menu when clicked-->
+
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li class="active"><a href="index.html">Work</a></li>
+          <li class="active"><a href="branding.html">Branding</a></li>
+          <li class="active"><a href="pamphlet.html">Pamphlet</a></li>
+          <li class="active"><a href="app.html">App</a></li>
+          <li class="active"><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <h2 class ="start">
+      Case Studies
+    </h2>
+    
+          <!-- here I'm diplaying my different case studies in a table-->
+
+    
+    <table>
+      <thead>
+        <tr>
+          <th><h4>
+            Pamphlet
+            </h4></th>
+          <th><h4>
+            Branding
+            </h4></th>
+          <th><h4>
+            App
+            </h4></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>
+            
+                  <!-- i added images to the table here with alt tags-->
+
+            
+            <a href="pamphlet.html">
+              <img
+                class="gardenlogo" alt ="the modern garden logo of a beet"
+                src="https://cdn.glitch.global/a0ddd621-92ef-428e-89cb-b4cc488ab179/Logo_the_Modern_Garden.png?v=1687291873160"
+              />
+            </a>
+          </td>
+          <td>
+            <a href="branding.html">
+              <img
+                class="SJPLFlogo" alt= "san jose public library foundation logo redesign of a tree in the shape of a map of san jose connected to a treetrunk with an orange bookmark on the side"
+                src = "https://cdn.glitch.global/a0ddd621-92ef-428e-89cb-b4cc488ab179/Asset%2011%403x.png?v=1687292078740"
+       />
+            </a>
+          </td>
+
+          <td>
+            <a href="app.html">
+              <img
+                class="bitemelogo" alt= "a logo for a meal planning application called BiteMe"
+                src="https://cdn.glitch.global/a0ddd621-92ef-428e-89cb-b4cc488ab179/Asset%206%403x.png?v=1687293055950"
+              />
+            </a>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot><td>A tri-fold educational pamphlet with a unique dye-cut</td><td>A branding kit for the San Jose Public Library Foundation</td><td>A fun meal prep app called Bite me</td></tfoot>
+    </table>
+    
+    
+    <h2>
+      Other
+    </h2>
+    
+    <h4>
+      After Effects Demo
+    </h4>
+    
+    
+          <!-- here is a video with controls -->
+
+    
+    <video alt="a short video of an animated editorial for the atlantic magazine" width="40%" controls>
+	  <source src="https://cdn.glitch.me/a0ddd621-92ef-428e-89cb-b4cc488ab179/Le_Nghi%20Midterm%20Project_1.mp4?v=1687307874546" type= "video/mp4">
+    </video>
+  <aside>
+    <h4>
+      Saul Bass Tribute
+    </h4>
+    <img id="saul" alt = "a poster tribute to saul bass with an illustration of his face on the inside of a press mold in front of a movie reel of his best work" class = "solo" src="https://cdn.glitch.global/a0ddd621-92ef-428e-89cb-b4cc488ab179/Designer%20Poster%20Arts%2053.jpg?v=1687308258021">
+    
+    </aside>
+    
+        <svg> x="0" y="0" height="1500px"</svg>
+    
+    
   </body>
 </html>
